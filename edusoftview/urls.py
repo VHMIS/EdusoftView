@@ -18,7 +18,8 @@ from django.contrib import admin
 from edu import views
 
 urlpatterns = [
-    url(r'^edu/', include('edu.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^edu/', include('edu.urls')),
     url(r'^$', views.index, name='index'),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
