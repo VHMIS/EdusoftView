@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EdusoftView Project</title>
     <link rel="stylesheet" type="text/css" href="{% static 'edu/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'edu/css/main.css' %}"/>
 </head>
-<body>
-    <nav class="navbar navbar-default">
+<body class="nav-on-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -28,5 +29,13 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>EdusoftView Project</h1>
+        </div>
+        <p class="lead">Dự án EdusoftView dùng để lấy thông tin từ hệ thống Edusoft cũ, giúp chuyển đổi nhanh chóng sang
+        các hệ thống mới phát triển sau này.
+    </div>
 </body>
 </html>
